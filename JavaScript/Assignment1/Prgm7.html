@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prgm7</title>
+        <script>   
+            function convert(){
+                var amt=parseInt(document.getElementById("num").value);    
+                document.write("Indian Rupees : "+(amt*74.28));
+                document.write("<br>");
+                document.write("Japanese Yen : "+(amt*109.14));
+                document.write("<br>");
+                document.write("Euros : "+(amt*0.84));
+                document.write("<br>");
+                document.write("Pound : "+(amt*0.72));
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" name="inputNum" id="num" placeholder="Enter amount in $"><br><br>
+        <button onclick="convert()">Click</button>
+    </body>
+</html>
