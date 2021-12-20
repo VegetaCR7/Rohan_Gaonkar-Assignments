@@ -1,0 +1,13 @@
+label{
+    color: rgb(240, 25, 25);
+}
+body{
+    background-color: cadetblue;
+}
+input{
+    text-decoration: solid;
+    border-color: black;
+}
+submit{
+    background-color: darkgray;
+}
