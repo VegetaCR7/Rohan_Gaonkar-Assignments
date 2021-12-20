@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prgm2</title>
+        <script>
+            function printNums(){
+                var num=parseInt(document.getElementById("num").value);
+                for(i=1;i<=num;i++){
+                    if(i%3==0 ||i%5==0){
+                        document.write(i);
+                        document.write("<br>");
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" name="inputNum" id="num" placeholder="Enter a number"><br><br>
+        <button onclick="printNums()">Click</button>
+    </body>
+</html>
