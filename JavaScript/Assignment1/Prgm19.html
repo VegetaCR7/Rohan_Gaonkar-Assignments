@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prgm19</title>
+        <script>
+            function performOperation(){
+                var op1=parseInt(document.getElementById("opr1").value);
+                var op2=parseInt(document.getElementById("opr2").value);
+                var oprt=document.getElementById("oprt").value;
+                var res=0;
+                switch(oprt){
+                    case "+": res=op1+op2;
+                              document.write("Addition is "+res);
+                              break; 
+                    case "-": res=op1-op2;
+                              document.write("Subtraction is "+res);
+                              break; 
+                    case "*": res=op1*op2;
+                              document.write("Multiplication is "+res);
+                              break;
+                    case "/": res=op1/op2;
+                              document.write("Divsion(Num) is "+res);
+                              break;
+                    case "%": res=op1%op2;
+                              document.write("Divsion(Rem) is "+res);
+                              break;
+                    default : document.write("Invalid operator");
+                              break;  
+                }
+            }
+        </script>
+    </head>
+    <body>
+       <label for="opr1">Operand 1: </label>
+       <input type="text" name="opr1" id="opr1"><br><br>
+       <label for="oprt">Operator: </label>
+       <input type="text" name="oprt" id="oprt"><br><br>
+       <label for="opr2">Operand 2: </label>
+       <input type="text" name="opr2" id="opr2"><br><br>
+       <button onclick="performOperation()">=</button>
+    </body>
+</html>
