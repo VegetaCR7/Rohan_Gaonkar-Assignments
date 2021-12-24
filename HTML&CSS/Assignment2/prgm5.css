@@ -1,6 +1,0 @@
-table,th,td{
-    border-style: solid;
-    /* To avoid having double borders we use border-collapse */
-    border-collapse: collapse;
-    color: #000;
-}
